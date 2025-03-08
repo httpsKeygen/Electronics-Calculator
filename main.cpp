@@ -67,7 +67,7 @@ void series(vector<float> &resistances)
         if (resistance >= 0)
         {
             tot += resistance;
-            cout << "Resistor's value added\n";
+            cout << "\033[32mResistor's value added\n\033[37m";
         }
 
         else
@@ -106,13 +106,13 @@ void parallel(vector<float> &resistances)
         if (resistance >= 0)
         {
             tot += 1 / resistance;
-            cout << "Resistor's value added\n";
+            cout << "\033[32mResistor's value added\n\033[37m";
         }
 
         else
             cout << "\033[31mError: \033[37mInvalid input\n";
 
-        cout << "Continue? (Y/N): ";
+        cout << "\nContinue? (Y/N): ";
         cin >> option;
 
         clearConsole();
